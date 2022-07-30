@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+  <b> Weather App </b>
+  </nav>
+
+  <form onsubmit="getWeather(); return false">
+
+  <label for="cityName">City Name:</label>
+  <input type="text" required name="" id="cityName" placeholder="Enter your city name here...">
+
+  <button type="submit" class="get-button">Get</button>
+  </form>
+
+  <br>
+  <div id="result">
+   <div id="wln"></div>
+   <div id="wh"></div>
+   <div id="wc"></div>
+   <div id="wf"></div>
+   <div id="prp"></div>
+   <div id="ws"></div>
+   <div id="cty"></div>
+   <div id="rgn"></div>
+   <div id="cont"></div>
+  </div>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js">
+  </script>
+<script src="script.js"></script>
+</body>
+</html>
