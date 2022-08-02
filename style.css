@@ -147,7 +147,14 @@ form{
 .get-button:active {
   opacity: 0.7;
 }
-
+#asof{
+  padding-right: 8px;
+  padding-left: 5px;
+}
+#rgn{
+    padding-right: 2px;
+    padding-left: 2px;
+}
 @media only screen and (max-width:425px) {
   body{
     font-size: 18px;
