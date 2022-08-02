@@ -8,29 +8,47 @@
   <title>Document</title>
 </head>
 <body>
-  <nav>
-  <b> Weather App </b>
-  </nav>
 
+  <h1> Weather App </h1> 
+
+  <span id="uppart">
   <form onsubmit="getWeather(); return false">
 
   <label for="cityName">City Name:</label>
-  <input type="text" required name="" id="cityName" placeholder="Enter your city name here...">
+  <input type="text" required name="" id="cityName" placeholder="Enter your city name here..." autofocus>
 
-  <button type="submit" class="get-button">Get</button>
+  <button type="submit" class="get-button"> Get </button>
   </form>
+  <span id="cont"></span>
+  </span>
 
   <br>
-  <div id="result">
-   <div id="wln"></div>
-   <div id="wh"></div>
-   <div id="wc"></div>
-   <div id="wf"></div>
-   <div id="prp"></div>
-   <div id="ws"></div>
-   <div id="cty"></div>
-   <div id="rgn"></div>
-   <div id="cont"></div>
+   <div id="result">
+    <span class="blackpart">
+     <span id="box">
+        <span id="wln"></span>
+        <span id="rgn"></span>
+        <span id="ltime"></span>
+     </span>  
+   <br>
+      <div id="wc"></div>
+      <div id="text"></div>
+    </span>
+     <div class="cards">
+      <div class="card">
+        <div id="flc"></div>
+        <div id="wh"></div>
+        <div id="wf"></div>
+        <div id="prp"></div>
+        <div id="ws"></div>
+      </div>
+      <div class="card2">
+        <div id="uv"></div>
+        <div id="vsblty"></div>
+        <div id="pressure"></div>
+        <div id="wdir"></div>
+      </div>
+     </div>
   </div>
 
   <script 
