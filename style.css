@@ -13,12 +13,17 @@ h1{
   font-family: monospace;
   padding: 10px 0px;
   text-align: center;
-  margin: 0px;
+  margin-top: -9px;
   margin-bottom: 5px;
+  margin-left: -8px;
+  margin-right: -8px;
 }
 #uppart{
   display: flex;
   flex-flow: row wrap;
+}
+#contt{
+  padding-right: 3px;
 }
 #cont{
   background-color: rgba(0, 0, 0, 0.4);
@@ -29,6 +34,7 @@ h1{
   margin-left: 30px;
   max-width: max-content;
   border-radius: 15px;
+  margin-top: 15px;
 }
 #box{
  background-color: rgba(0, 0, 0, 0.8);
@@ -76,11 +82,12 @@ input{
   margin: 0px;
   padding-top: 0px;
 }
-.blackpart{
+.part1{
   display: flex;
   flex-flow: column wrap;
   margin: 0px 400px;
   justify-content: center;
+  margin-top: 60px;
 }
 .cards{
   display: flex;
@@ -92,6 +99,7 @@ input{
   color: black;
   max-width: 420px;
   padding: 15px 10px;
+  padding-left: 15px;
   margin: 10px 0px;
   font-size: 25px;
   border-top-left-radius: 15px;
@@ -112,7 +120,8 @@ form{
   padding: 15px 20px;
   max-width: fit-content;
   border-radius: 40px;
-  /* color: white; */
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .get-button{
@@ -148,10 +157,11 @@ form{
     font-size: 17px;
   }
   .get-button{
-    font-size: 17px;
+    font-size: 20px;
     padding: 3px 5px;
     max-width: max-content;
     height: max-content;
+    margin: 2px;
   }
   h1{
     font-size: 35px;
@@ -159,8 +169,9 @@ form{
   }
   form{
     background-color: rgba(255, 255, 255, 0.5);
+    margin: 2px;
   }
-  .blackpart{
+  .part1{
     margin: 0px;
     font-size: 20px;
   }
@@ -180,7 +191,7 @@ form{
    border-top-right-radius: 15px;
    border-bottom-right-radius: 15px;
   }
-   .card2{   /*  52   10*/
+   .card2{   
     padding: 0px 52px 10px 77px;
     margin: 5px 0px 5px 0px;
     font-size: 20px;
@@ -197,5 +208,67 @@ form{
     padding: 0px 0px 10px 10px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+  }
+  #asof{
+    padding-right: 8px;
+    padding-left: 3px;
+  }
+}
+@media only screen and (width:768px) {
+  body{
+    font-size: 22px;
+  }
+  form{
+    margin-left: 2px;
+  }
+  .card{
+    font-size: 22px;
+  }
+  .card2{
+    font-size: 22px;
+  }
+  #cont{
+    margin: 8px 5px 2px 5px;
+  }
+  #wln{
+   padding: 5px 0px -10px 10px;
+   margin: 5px 2px -10px 2px;
+  }
+  #rgn{
+    /* padding: 2px 10px -70px 30px; */
+    margin: 5px 1px -20px 1px;
+  }
+  #ltime{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0px 0px -20px 0px;
+    margin: 6px 2px -20px 2px;
+
+  }
+  #box{ /*       -100px    -120 */
+    margin: 0px -200px 0px -350px;
+    max-width: max-content;
+    padding: 20px;
+    /* padding: -15px 10px 30px -7px; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    }
+  #wc{
+    /* /* margin-left: -300px; */
+    margin-left: -350px;
+    margin-right: -200px;
+  }
+  #text{
+    margin: 0px -200px 0px -350px;
+    padding: -10px -10px 0px -7px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+  }
+  #asof{
+    padding-right: 8px;
+    padding-left: 7px;
   }
 }
